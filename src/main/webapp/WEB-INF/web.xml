@@ -3,16 +3,35 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
-  
-  <servlet>
-  	<servlet-name>addition</servlet-name>
-  	<servlet-class>com.bob.servlets.AddServlet</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>addition</servlet-name>
-  	<url-pattern>/add</url-pattern>
-  </servlet-mapping>
-  
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>addition</servlet-name>
+		<servlet-class>com.bob.servlets.AddServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>addition</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>squaring</servlet-name>
+		<servlet-class>com.bob.servlets.SquareServlet</servlet-class>
+		
+		<init-param>
+		<param-name>mwandishi</param-name>
+		<param-value>Author:    Mwangi</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>squaring</servlet-name>
+		<url-pattern>/square</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>Author</param-name>
+		<param-value>Author:   Bob</param-value>
+	</context-param>
 </web-app>
