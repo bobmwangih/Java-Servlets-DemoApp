@@ -34,9 +34,9 @@ public class SquareServlet extends HttpServlet {
 		res.getWriter().println(l);
 		
 		//context params declared in web.xml--data  to be shared among all servlets
-//		String author = getServletContext().getInitParameter("Author");
-//		res.getWriter().println(author);
-//		
+		//String author = getServletContext().getInitParameter("Author");
+		//		res.getWriter().println(author);
+				
 		//context config declared within servlets---data is unique for each servlet
 		/*
 		 * String author = getServletConfig().getInitParameter("mwandishi");
